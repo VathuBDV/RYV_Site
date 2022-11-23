@@ -1,10 +1,34 @@
-# RYV_proj
+# RYV Site
 
-# Database Name : music_db
-# Test Database Name : music_test_db
+##Description
 
-# Docker Container : docker exec -it SongsSqlContainer bash
+This is a music streaming site which allows a user to upload a music file and stream it on the website. 
+The user can create a personal account which will keep track of his uploaded files. 
+This was my final project for Web Programing II course during the Winter 2022 semester.
 
-# Final report : https://docs.google.com/document/d/1ov8g6SupRp6bUddvRCKANUSGo0g5BKnfK_EypjMcOXU/edit?usp=sharing
+## Node Modules used: 
 
-# Node Modules : body-parser cookie-parser express express-fileupload express-handlebars express-list-routes handlebars jest mysql2 pino-http supertest uuid validator
+* body-parser 
+* cookie-parser 
+* express 
+* express-fileupload 
+* express-handlebars 
+* express-list-routes 
+* handlebars 
+* jest 
+* mysql2 
+* pino-http 
+* supertest 
+* uuid 
+* validator
+
+## For more information:
+
+Here is the [Final Report] (https://docs.google.com/document/d/1ov8g6SupRp6bUddvRCKANUSGo0g5BKnfK_EypjMcOXU/edit?usp=sharing "Final Report") on the project.
+
+##Collaborators:
+
+- Yorick Ntwari Niyonkuru
+- Resham Moocheet
+- Vathusan Vimalarajan
+
