@@ -1,5 +1,6 @@
 # RYV Site
 
+
 ##Description
 
 This is a music streaming site which allows a user to upload a music file and stream it on the website. 
@@ -24,7 +25,8 @@ This was my final project for Web Programing II course during the Winter 2022 se
 
 ## For more information:
 
-Here is the [Final Report] (https://docs.google.com/document/d/1ov8g6SupRp6bUddvRCKANUSGo0g5BKnfK_EypjMcOXU/edit?usp=sharing "Final Report") on the project.
+Here is the [Final Project](https://docs.google.com/document/d/1ov8g6SupRp6bUddvRCKANUSGo0g5BKnfK_EypjMcOXU/edit?usp=sharing "Final Report")
+
 
 ##Collaborators:
 
