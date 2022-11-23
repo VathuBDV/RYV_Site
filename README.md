@@ -5,7 +5,7 @@
 
 This is a music streaming site which allows a user to upload a music file and stream it on the website. 
 The user can create a personal account which will keep track of his uploaded files. 
-This was my final project for Web Programing II course during the Winter 2022 semester.
+This was my final project for my Web Programing II course during the Winter semester of the year 2022.
 
 ## Node Modules used 
 
