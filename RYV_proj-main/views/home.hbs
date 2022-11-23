@@ -1,0 +1,28 @@
+<h1>{{message}}</h1>
+<!-- Songs Table -->
+<div style="display: block; justify-content: space-around; margin-top: 50px">
+    <form method="get" action="/song">
+        <input type="text" placeholder="Search" class="search-bar" name="searchQuery">
+        <button class="styled-button" style="border-radius: 5px; padding-bottom: 20px">Search</button>
+    </form>
+    <div class="table">
+        <table border="1px" width="100%">
+            <caption>{{heading}}</caption>
+            <thead>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Times Played</th>
+            </thead>
+            {{#each songs}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{artist}}</td>
+                <td style="text-align: center">{{timesPlayed}}</td>
+                <form method="post" role="form" action="/play">
+                    <td><button class="play-button" type="submit" name="playSongId" value={{id}} style="font-size:smaller; padding: 1em">▶</button></td>
+                </form>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

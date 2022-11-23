@@ -1,0 +1,58 @@
+<form action="/register" method="post" role="form" id="login-form">
+    <legend>Please enter your username and password to sign up</legend>
+    <br>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username"  minlength="8" name="username" value={{username}}><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" minlength="8" value={{password}}>
+    <br>
+    <label for="password">Confirm Password:</label><br>
+    <input type="password" name="confirmpassword" minlength="8" value={{confirmpassword}}>
+
+    <input type="hidden" name="showPaypal" value={{showPaypal}}>
+    <br>
+
+    {{#if showPaypal}}
+        <button type="submit" formaction="/signup" formmethod="post" name="freeButton" style="border-radius: 5px;">Stay as Free User</button>
+    {{else}}
+        <button type="submit" formaction="/signup" formmethod="post" name="buyButton" style="border-radius: 5px;">Buy Premium</button>
+
+    {{/if}}
+
+    {{#if showPaypal}}
+    <div id="paypal-button-container">
+
+    </div>
+    {{/if}}
+
+    <div class="premiumTable">
+        <table class="premiumTable">
+            <th colspan="3" style="text-align: center;"><h2>Package Plans</h2></th>
+            <tr> 
+                <th style="text-align:left">Features</th>
+                <th class="offer">Free</th>
+                <th class="offer">Premium</th>
+            </tr>
+            <tr>
+                <td>Can manage songs</td>
+                <td class="offer" style="color:green">✓</td>
+                <td class="offer" style="color:green">✓</td>
+            </tr>
+            <tr>
+                <td>Can manage playlists</td>
+                <td  class="offer" style="color:green">✓</td>
+                <td  class="offer" style="color:green">✓</td>
+            </tr>
+            <tr>
+                <td>Can download songs</td>
+                <td class="offer" style="color:red">x</td>
+                <td class="offer" style="color:green">✓</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <button type="submit" class="sign-up-btn" style="border-radius: 5px;">Sign Up</button>
+    </div>
+
+</form>

@@ -1,0 +1,22 @@
+<header>
+    <img src="images/logo-dark.png" class="header-logo"/>
+    <h1 class="header-text">RYV</h1>
+    <div class="header-container">
+        <form action="/profile" method="GET" role="form" class="account-btn">
+            <button class="styled-button" id="accountButton" type=submit>Account</button>
+        </form>
+        <form action="/logout" method="GET" role="form" class="log-out-nav">
+            <button class="styled-button" id="account" type="submit" 
+            {{#if hideLogout}}
+                style="display: none;"
+            {{/if}}
+            >Logout</button>
+        </form>
+    </div>
+    <nav >
+        <a href="/home">Home</a>
+        <a href="/song">Browse Songs</a>
+        <a href="/playlist" >My Library</a>
+        <a href="/aboutUs" >About Us</a>
+    </nav>
+</header>
